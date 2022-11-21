@@ -3,7 +3,7 @@ package net.requef.studentpicker;
 import java.util.*;
 
 public class Classroom {
-    private static final Random random = new Random();
+    private static final Random RANDOM = new Random();
 
     private final List<Student> students;
     private final Map<Student, Integer> studentGrades = new HashMap<>();
@@ -25,6 +25,6 @@ public class Classroom {
             return null;
         }
 
-        return students.get(random.nextInt(0, students.size()));
+        return students.get(RANDOM.nextInt(0, students.size()));
     }
 }
